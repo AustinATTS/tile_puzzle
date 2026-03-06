@@ -45,14 +45,11 @@ public class TilePuzzle extends JFrame implements ActionListener {
       clicked_tile.exchangeImageWith(blank_tile);
       int blank_x = blank_tile.getXPos();
       int blank_y = blank_tile.getYPos();
-      System.out.println(blank_x);
-      System.out.println(blank_y);
-      System.out.println("----------");
-      System.out.println(clicked_tile.getXPos());
-      System.out.println(clicked_tile.getYPos());
-      blank_tile.setGridPosition(clicked_tile.getXPos(), clicked_tile.getYPos());
+      int clicked_x = clicked_tile.getXPos();
+      int clicked_y = clicked_tile.getYPos();
       clicked_tile.setGridPosition(blank_x, blank_y);
-      blank_tile = clicked_tile; // Swap the blank tile with the clicked one.
+      blank_tile.setGridPosition(clicked_x, clicked_y);
+      clicked_tile = blank_tile;
     }
   }
 }
