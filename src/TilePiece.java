@@ -1,3 +1,5 @@
+package src;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -90,4 +92,15 @@ public class TilePiece extends JButton
 	{
 		return this.getIcon() == solvedIcon;
 	}
+
+    /**
+     * Updates the grid position of the tile.
+     *
+     * @param x_pos New x position of the tile.
+     * @param y_pos New y position of the tile.
+     */
+    public void setGridPosition(int x_pos, int y_pos) {
+        this.xPos = x_pos;
+        this.yPos = y_pos;
+    }
 }
