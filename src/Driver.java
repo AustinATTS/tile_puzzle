@@ -2,8 +2,7 @@ package src;
 
 public class Driver {
 
-	public static void main(String[] args) {
-		TilePuzzle t = new TilePuzzle();
-	}
-
+  public static void main(String[] args) {
+    TilePuzzle t = new TilePuzzle();
+  }
 }
